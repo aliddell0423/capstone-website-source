@@ -1,0 +1,115 @@
+#+TITLE: Magister's Team Website
+#+DESCRIPTION: This will be the html that goes on my website
+#+AUTHOR: Andrew Liddell
+#+EXPORT_FILE_NAME: /home/andrew/Capstone/team-website-files/index.html
+#+EMAIL: gigachad@ajliddell.xyz
+#+SETUPFILE: /home/andrew/Capstone/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+[[./Magisters_80x80.png]]
+* Teaching Assistant Scheduling and Management System
+** Team Members
++ Andrew Liddell - ajl496@nau.edu
++ Joe Domabyl V - jwd98@nau.edu
++ Daniel Drake - dcd97@nau.edu
++ Junjian Yin - jy358@nau.edu
+
+** Project Sponsor
+Dr. Slava Fofanov - Associate director of the graduate program for SICCS at NAU
+
+Email: <Email>
+
+** Technical Advisor
+Vova Saruta
+
+Email: vvs28@nau.edu
+
+* Meet the Team!
+[[./team_photo.png]]
+** Roles
++ Joe Domabyl V
+  - Team Leader
+  - Release Manager
+  - Lead Architect
++ Daniel Drake
+  - Editor
+  - Presentation Coordinator
++ Andrew Liddell
+  - Website Developer
+  - Editor
+  - Meetings Recorder
++ Junjian Yin
+  - Lead designer
+  - Client Relations Manager
+* What is this project for?
+The responsibility of the associate director of the SICCS program is nothing short of massive. Scheduling classes and placing qualified TA's in their respective classes is tedious and monotnous, but very consuming of what little time they have. As of now, they must manually assign TA's in an excel spreadsheet. This is a terrible setup due to two circumstances:
+1. A TA requesting a schedule change
+2. A TA being terminated
+When either of these circumstances occur, a butterfly effect of holes also open up, which means many people must be moved around to fill that hole. Doing this process manually with a spreadsheet is terrible, hence the heart of our problem.
+[[./flowchart.png]]
+The goal is to develop a web application that can organize TA's depending on their qualifications and automatically sort out any holes left if a TA makes a change or is terminated. We also want a system that allows TA's to non-confrontationally ask if they could swap with other TA's if they desire their spot.
+
+Dr. Fofanov has a personal stake in this project, in that he wishes to quell the tedium of this task through a web application developed by us! If we can develop a great web application to handle this issue, we will try to expand our horizons to the rest of the department, or maybe even to other departments and universities. The impact of such could be huge.
+
+The original document of what Fofanov had in mind can be found here:
+[[./Fofanov-TAscheduler.pdf]]
+
+* Development Requirements/Process
+** Requirements Overview
+To tackle this, we will need the following:
++ A google form used by the software to determine the qualifications for each TA.
++ A database responsive to suit the needs of several hundred people at once.
++ A user-friendly and inoffensive GUI easily navigable by TA's and GTA's
++ An efficient and readable optimization algorithm to automatically sort TA's
+
+** Requirements Details
+<coming soon!>
+
+** Development Process Overview
+The team standards for our development process can be found here:
+[[./CS476-MagistersTeamStandards.pdf]]
+<more coming soon!>
+
+** Development Process Details
+<coming soon!>
+
+* Envisioned Solution
+[[./sol_flowchart.png]]
+This application will allow a sys admin to place the TA's in a table initially, but the initial placement can be done depending on how they recorded their proficiencies on the google form. Faculty will have read only privileges and will be able to make requests for changes in the database. This must be modifiable enough so that restraints when making changes to the database can be modified. If there is a schedule conflict for one of the TA's there will be a large pentalty from being assigned to said course, as the optimiser will be less likely to assign the student.
+
+Our presentation with the proposed solution can be found here:
+[[./CS476-MagistersMiniIntro.pdf]]
+
+* Technologies
+** Possible Web Frameworks
++ Django
++ Node.js
+
+** Possible Database Frameworks
++ MySQL
++ SQLite
++ Redis
+
+  <more coming soon>
+* Our Schedule and Resources
+We are extremely early in the development process, so currently we are researching our options to build this application the best way possible. We will soon upload our technological feasibility document to show the current process.
+
+| [week] | Sunday | Monday | Tuesday | Wedensday | Thursday | Friday                           | Saturday |
+|--------+--------+--------+---------+-----------+----------+----------------------------------+----------|
+| 8/23   |        |        |         |           |          |                                  |          |
+| 8/30   |        |        |         |           |          |                                  |          |
+| 9/6    |        |        |         |           |          |                                  |          |
+| 9/13   |        |        |         |           |          |                                  |          |
+| 9/20   |        |        |         |           |          |                                  |          |
+| 9/27   |        |        |         |           |          | Team Standards and Inventory Due |          |
+| 10/4   |        |        |         |           |          |                                  |          |
+| 10/11  |        |        |         |           |          |                                  |          |
+| 10/18  |        |        |         |           |          |                                  |          |
+| 10/25  |        |        |         |           |          |                                  |          |
+| 11/1   |        |        |         |           |          |                                  |          |
+| 11/8   |        |        |         |           |          |                                  |          |
+| 11/15  |        |        |         |           |          |                                  |          |
+| 11/22  |        |        |         |           |          |                                  |          |
+| 11/29  |        |        |         |           |          |                                  |          |
+| 12/6   |        |        |         |           |          |                                  |          |
+* Codebase
+Coming soon!

@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-10-07 Thu 11:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Magister's Team Website</title>
+<meta name="author" content="Andrew Liddell" />
+<meta name="description" content="This will be the html that goes on my website" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Magister&rsquo;s Team Website</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf4b0f25">Teaching Assistant Scheduling and Management System</a>
+<ul>
+<li><a href="#org83b5cb0">Team Members</a></li>
+<li><a href="#org21cf37b">Project Sponsor</a></li>
+<li><a href="#org63e692f">Technical Advisor</a></li>
+</ul>
+</li>
+<li><a href="#org18017e0">Meet the Team!</a>
+<ul>
+<li><a href="#org2701e55">Roles</a></li>
+</ul>
+</li>
+<li><a href="#orga57f09a">What is this project for?</a></li>
+<li><a href="#orge7fa939">Development Requirements/Process</a>
+<ul>
+<li><a href="#org8528376">Requirements Overview</a></li>
+<li><a href="#orgca01f18">Requirements Details</a></li>
+<li><a href="#orgae6f685">Development Process Overview</a></li>
+<li><a href="#org174d089">Development Process Details</a></li>
+</ul>
+</li>
+<li><a href="#org4dfdf87">Envisioned Solution</a></li>
+<li><a href="#orgd0de097">Technologies</a>
+<ul>
+<li><a href="#orgf0658b2">Possible Web Frameworks</a></li>
+<li><a href="#org7814b6c">Possible Database Frameworks</a></li>
+</ul>
+</li>
+<li><a href="#orgaa12f80">Our Schedule and Resources</a></li>
+<li><a href="#org9cfeb2f">Codebase</a></li>
+</ul>
+</div>
+</div>
+
+<div id="orgeca4038" class="figure">
+<p><img src="./Magisters_80x80.png" alt="Magisters_80x80.png" />
+</p>
+</div>
+<div id="outline-container-orgf4b0f25" class="outline-2">
+<h2 id="orgf4b0f25">Teaching Assistant Scheduling and Management System</h2>
+<div class="outline-text-2" id="text-orgf4b0f25">
+</div>
+<div id="outline-container-org83b5cb0" class="outline-3">
+<h3 id="org83b5cb0">Team Members</h3>
+<div class="outline-text-3" id="text-org83b5cb0">
+<ul class="org-ul">
+<li>Andrew Liddell - ajl496@nau.edu</li>
+<li>Joe Domabyl V - jwd98@nau.edu</li>
+<li>Daniel Drake - dcd97@nau.edu</li>
+<li>Junjian Yin - jy358@nau.edu</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org21cf37b" class="outline-3">
+<h3 id="org21cf37b">Project Sponsor</h3>
+<div class="outline-text-3" id="text-org21cf37b">
+<p>
+Dr. Slava Fofanov - Associate director of the graduate program for SICCS at NAU
+</p>
+
+<p>
+Email: &lt;Email&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org63e692f" class="outline-3">
+<h3 id="org63e692f">Technical Advisor</h3>
+<div class="outline-text-3" id="text-org63e692f">
+<p>
+Vova Saruta
+</p>
+
+<p>
+Email: vvs28@nau.edu
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org18017e0" class="outline-2">
+<h2 id="org18017e0">Meet the Team!</h2>
+<div class="outline-text-2" id="text-org18017e0">
+
+<div id="orgb9bd0b7" class="figure">
+<p><img src="./team_photo.png" alt="team_photo.png" />
+</p>
+</div>
+</div>
+<div id="outline-container-org2701e55" class="outline-3">
+<h3 id="org2701e55">Roles</h3>
+<div class="outline-text-3" id="text-org2701e55">
+<ul class="org-ul">
+<li>Joe Domabyl V
+<ul class="org-ul">
+<li>Team Leader</li>
+<li>Release Manager</li>
+<li>Lead Architect</li>
+</ul></li>
+<li>Daniel Drake
+<ul class="org-ul">
+<li>Editor</li>
+<li>Presentation Coordinator</li>
+</ul></li>
+<li>Andrew Liddell
+<ul class="org-ul">
+<li>Website Developer</li>
+<li>Editor</li>
+<li>Meetings Recorder</li>
+</ul></li>
+<li>Junjian Yin
+<ul class="org-ul">
+<li>Lead designer</li>
+<li>Client Relations Manager</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga57f09a" class="outline-2">
+<h2 id="orga57f09a">What is this project for?</h2>
+<div class="outline-text-2" id="text-orga57f09a">
+<p>
+The responsibility of the associate director of the SICCS program is nothing short of massive. Scheduling classes and placing qualified TA&rsquo;s in their respective classes is tedious and monotnous, but very consuming of what little time they have. As of now, they must manually assign TA&rsquo;s in an excel spreadsheet. This is a terrible setup due to two circumstances:
+</p>
+<ol class="org-ol">
+<li>A TA requesting a schedule change</li>
+<li>A TA being terminated</li>
+</ol>
+<p>
+When either of these circumstances occur, a butterfly effect of holes also open up, which means many people must be moved around to fill that hole. Doing this process manually with a spreadsheet is terrible, hence the heart of our problem.
+<img src="./flowchart.png" alt="flowchart.png" />
+The goal is to develop a web application that can organize TA&rsquo;s depending on their qualifications and automatically sort out any holes left if a TA makes a change or is terminated. We also want a system that allows TA&rsquo;s to non-confrontationally ask if they could swap with other TA&rsquo;s if they desire their spot.
+</p>
+
+<p>
+Dr. Fofanov has a personal stake in this project, in that he wishes to quell the tedium of this task through a web application developed by us! If we can develop a great web application to handle this issue, we will try to expand our horizons to the rest of the department, or maybe even to other departments and universities. The impact of such could be huge.
+</p>
+
+<p>
+The original document of what Fofanov had in mind can be found here:
+<a href="./Fofanov-TAscheduler.pdf">./Fofanov-TAscheduler.pdf</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge7fa939" class="outline-2">
+<h2 id="orge7fa939">Development Requirements/Process</h2>
+<div class="outline-text-2" id="text-orge7fa939">
+</div>
+<div id="outline-container-org8528376" class="outline-3">
+<h3 id="org8528376">Requirements Overview</h3>
+<div class="outline-text-3" id="text-org8528376">
+<p>
+To tackle this, we will need the following:
+</p>
+<ul class="org-ul">
+<li>A google form used by the software to determine the qualifications for each TA.</li>
+<li>A database responsive to suit the needs of several hundred people at once.</li>
+<li>A user-friendly and inoffensive GUI easily navigable by TA&rsquo;s and GTA&rsquo;s</li>
+<li>An efficient and readable optimization algorithm to automatically sort TA&rsquo;s</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgca01f18" class="outline-3">
+<h3 id="orgca01f18">Requirements Details</h3>
+<div class="outline-text-3" id="text-orgca01f18">
+<p>
+&lt;coming soon!&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae6f685" class="outline-3">
+<h3 id="orgae6f685">Development Process Overview</h3>
+<div class="outline-text-3" id="text-orgae6f685">
+<p>
+The team standards for our development process can be found here:
+<a href="./CS476-MagistersTeamStandards.pdf">./CS476-MagistersTeamStandards.pdf</a>
+&lt;more coming soon!&gt;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org174d089" class="outline-3">
+<h3 id="org174d089">Development Process Details</h3>
+<div class="outline-text-3" id="text-org174d089">
+<p>
+&lt;coming soon!&gt;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4dfdf87" class="outline-2">
+<h2 id="org4dfdf87">Envisioned Solution</h2>
+<div class="outline-text-2" id="text-org4dfdf87">
+<p>
+<img src="./sol_flowchart.png" alt="sol_flowchart.png" />
+This application will allow a sys admin to place the TA&rsquo;s in a table initially, but the initial placement can be done depending on how they recorded their proficiencies on the google form. Faculty will have read only privileges and will be able to make requests for changes in the database. This must be modifiable enough so that restraints when making changes to the database can be modified. If there is a schedule conflict for one of the TA&rsquo;s there will be a large pentalty from being assigned to said course, as the optimiser will be less likely to assign the student.
+</p>
+
+<p>
+Our presentation with the proposed solution can be found here:
+<a href="./CS476-MagistersMiniIntro.pdf">./CS476-MagistersMiniIntro.pdf</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0de097" class="outline-2">
+<h2 id="orgd0de097">Technologies</h2>
+<div class="outline-text-2" id="text-orgd0de097">
+</div>
+<div id="outline-container-orgf0658b2" class="outline-3">
+<h3 id="orgf0658b2">Possible Web Frameworks</h3>
+<div class="outline-text-3" id="text-orgf0658b2">
+<ul class="org-ul">
+<li>Django</li>
+<li>Node.js</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7814b6c" class="outline-3">
+<h3 id="org7814b6c">Possible Database Frameworks</h3>
+<div class="outline-text-3" id="text-org7814b6c">
+<ul class="org-ul">
+<li>MySQL</li>
+<li>SQLite</li>
+<li><p>
+Redis
+</p>
+
+<p>
+&lt;more coming soon&gt;
+</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaa12f80" class="outline-2">
+<h2 id="orgaa12f80">Our Schedule and Resources</h2>
+<div class="outline-text-2" id="text-orgaa12f80">
+<p>
+We are extremely early in the development process, so currently we are researching our options to build this application the best way possible. We will soon upload our technological feasibility document to show the current process.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">[week]</th>
+<th scope="col" class="org-left">Sunday</th>
+<th scope="col" class="org-left">Monday</th>
+<th scope="col" class="org-left">Tuesday</th>
+<th scope="col" class="org-left">Wedensday</th>
+<th scope="col" class="org-left">Thursday</th>
+<th scope="col" class="org-left">Friday</th>
+<th scope="col" class="org-left">Saturday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">8/23</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">8/30</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">9/6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">9/13</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">9/20</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">9/27</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Team Standards and Inventory Due</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10/4</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10/11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10/18</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10/25</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">11/1</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">11/8</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">11/15</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">11/22</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">11/29</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">12/6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org9cfeb2f" class="outline-2">
+<h2 id="org9cfeb2f">Codebase</h2>
+<div class="outline-text-2" id="text-org9cfeb2f">
+<p>
+Coming soon!
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Andrew Liddell</p>
+<p class="date">Created: 2021-10-07 Thu 11:18</p>
+</div>
+</body>
+</html>
