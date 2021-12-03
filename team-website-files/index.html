@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-10-07 Thu 11:18 -->
+<!-- 2021-12-03 Fri 06:04 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Magister's Team Website</title>
@@ -230,51 +230,64 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf4b0f25">Teaching Assistant Scheduling and Management System</a>
+<li><a href="#orgc1a771c">Teaching Assistant Scheduling and Management System</a>
 <ul>
-<li><a href="#org83b5cb0">Team Members</a></li>
-<li><a href="#org21cf37b">Project Sponsor</a></li>
-<li><a href="#org63e692f">Technical Advisor</a></li>
+<li><a href="#org6f4940c">Team Members</a></li>
+<li><a href="#orga214989">Project Sponsor</a></li>
+<li><a href="#org6116c14">Technical Advisor</a></li>
 </ul>
 </li>
-<li><a href="#org18017e0">Meet the Team!</a>
+<li><a href="#org60fa0a7">Meet the Team!</a>
 <ul>
-<li><a href="#org2701e55">Roles</a></li>
+<li><a href="#orgad92fde">Roles</a></li>
 </ul>
 </li>
-<li><a href="#orga57f09a">What is this project for?</a></li>
-<li><a href="#orge7fa939">Development Requirements/Process</a>
+<li><a href="#org249aaa6">What is this project for?</a></li>
+<li><a href="#org6759a3d">Development Requirements/Process</a>
 <ul>
-<li><a href="#org8528376">Requirements Overview</a></li>
-<li><a href="#orgca01f18">Requirements Details</a></li>
-<li><a href="#orgae6f685">Development Process Overview</a></li>
-<li><a href="#org174d089">Development Process Details</a></li>
+<li><a href="#org62f2fbd">Requirements Overview</a></li>
+<li><a href="#org2628852">Data Management System</a></li>
+<li><a href="#orgbf3700f">Web GUI</a>
+<ul>
+<li><a href="#orgd342615">Diagram of the Lab Coordinator Interface</a></li>
+<li><a href="#org3580bd5">Diagram of the TA Interface</a></li>
 </ul>
 </li>
-<li><a href="#org4dfdf87">Envisioned Solution</a></li>
-<li><a href="#orgd0de097">Technologies</a>
-<ul>
-<li><a href="#orgf0658b2">Possible Web Frameworks</a></li>
-<li><a href="#org7814b6c">Possible Database Frameworks</a></li>
+<li><a href="#org1484d72">User-Based Authentication and Permissions</a></li>
+<li><a href="#org9af327f">Optimization Algorithm</a></li>
+<li><a href="#orgb4461bf">Account Configuration and Setup</a></li>
+<li><a href="#orgc15e690">Development Process Overview</a></li>
 </ul>
 </li>
-<li><a href="#orgaa12f80">Our Schedule and Resources</a></li>
-<li><a href="#org9cfeb2f">Codebase</a></li>
+<li><a href="#orgb3a5d80">Technologies</a>
+<ul>
+<li><a href="#orgbee989d">Django</a></li>
+<li><a href="#org70be3ca">Redis</a></li>
+<li><a href="#orgcadc876">Django-redis library</a></li>
+<li><a href="#org5fec492">General text editors</a></li>
+<li><a href="#org934200f">Pycharm community edition</a></li>
+<li><a href="#org88522bb">AWS</a></li>
+<li><a href="#org1b7a108">Github</a></li>
+</ul>
+</li>
+<li><a href="#org87e108a">Envisioned Solution</a></li>
+<li><a href="#org7c4e333">Our Schedule and Resources</a></li>
+<li><a href="#org4ba6d26">Codebase</a></li>
 </ul>
 </div>
 </div>
 
-<div id="orgeca4038" class="figure">
+<div id="orgd31e7df" class="figure">
 <p><img src="./Magisters_80x80.png" alt="Magisters_80x80.png" />
 </p>
 </div>
-<div id="outline-container-orgf4b0f25" class="outline-2">
-<h2 id="orgf4b0f25">Teaching Assistant Scheduling and Management System</h2>
-<div class="outline-text-2" id="text-orgf4b0f25">
+<div id="outline-container-orgc1a771c" class="outline-2">
+<h2 id="orgc1a771c">Teaching Assistant Scheduling and Management System</h2>
+<div class="outline-text-2" id="text-orgc1a771c">
 </div>
-<div id="outline-container-org83b5cb0" class="outline-3">
-<h3 id="org83b5cb0">Team Members</h3>
-<div class="outline-text-3" id="text-org83b5cb0">
+<div id="outline-container-org6f4940c" class="outline-3">
+<h3 id="org6f4940c">Team Members</h3>
+<div class="outline-text-3" id="text-org6f4940c">
 <ul class="org-ul">
 <li>Andrew Liddell - ajl496@nau.edu</li>
 <li>Joe Domabyl V - jwd98@nau.edu</li>
@@ -284,24 +297,24 @@
 </div>
 </div>
 
-<div id="outline-container-org21cf37b" class="outline-3">
-<h3 id="org21cf37b">Project Sponsor</h3>
-<div class="outline-text-3" id="text-org21cf37b">
+<div id="outline-container-orga214989" class="outline-3">
+<h3 id="orga214989">Project Sponsor</h3>
+<div class="outline-text-3" id="text-orga214989">
 <p>
-Dr. Slava Fofanov - Associate director of the graduate program for SICCS at NAU
+Dr. Viacheslav Fofanov - Associate director of the graduate program for SICCS at NAU
 </p>
 
 <p>
-Email: &lt;Email&gt;
+Email: Viacheslav.Fofanov@nau.edu
 </p>
 </div>
 </div>
 
-<div id="outline-container-org63e692f" class="outline-3">
-<h3 id="org63e692f">Technical Advisor</h3>
-<div class="outline-text-3" id="text-org63e692f">
+<div id="outline-container-org6116c14" class="outline-3">
+<h3 id="org6116c14">Technical Advisor</h3>
+<div class="outline-text-3" id="text-org6116c14">
 <p>
-Vova Saruta
+Volodymyr Saruta
 </p>
 
 <p>
@@ -311,18 +324,18 @@ Email: vvs28@nau.edu
 </div>
 </div>
 
-<div id="outline-container-org18017e0" class="outline-2">
-<h2 id="org18017e0">Meet the Team!</h2>
-<div class="outline-text-2" id="text-org18017e0">
+<div id="outline-container-org60fa0a7" class="outline-2">
+<h2 id="org60fa0a7">Meet the Team!</h2>
+<div class="outline-text-2" id="text-org60fa0a7">
 
-<div id="orgb9bd0b7" class="figure">
+<div id="org0d18bf3" class="figure">
 <p><img src="./team_photo.png" alt="team_photo.png" />
 </p>
 </div>
 </div>
-<div id="outline-container-org2701e55" class="outline-3">
-<h3 id="org2701e55">Roles</h3>
-<div class="outline-text-3" id="text-org2701e55">
+<div id="outline-container-orgad92fde" class="outline-3">
+<h3 id="orgad92fde">Roles</h3>
+<div class="outline-text-3" id="text-orgad92fde">
 <ul class="org-ul">
 <li>Joe Domabyl V
 <ul class="org-ul">
@@ -350,9 +363,9 @@ Email: vvs28@nau.edu
 </div>
 </div>
 </div>
-<div id="outline-container-orga57f09a" class="outline-2">
-<h2 id="orga57f09a">What is this project for?</h2>
-<div class="outline-text-2" id="text-orga57f09a">
+<div id="outline-container-org249aaa6" class="outline-2">
+<h2 id="org249aaa6">What is this project for?</h2>
+<div class="outline-text-2" id="text-org249aaa6">
 <p>
 The responsibility of the associate director of the SICCS program is nothing short of massive. Scheduling classes and placing qualified TA&rsquo;s in their respective classes is tedious and monotnous, but very consuming of what little time they have. As of now, they must manually assign TA&rsquo;s in an excel spreadsheet. This is a terrible setup due to two circumstances:
 </p>
@@ -362,9 +375,15 @@ The responsibility of the associate director of the SICCS program is nothing sho
 </ol>
 <p>
 When either of these circumstances occur, a butterfly effect of holes also open up, which means many people must be moved around to fill that hole. Doing this process manually with a spreadsheet is terrible, hence the heart of our problem.
-<img src="./flowchart.png" alt="flowchart.png" />
-The goal is to develop a web application that can organize TA&rsquo;s depending on their qualifications and automatically sort out any holes left if a TA makes a change or is terminated. We also want a system that allows TA&rsquo;s to non-confrontationally ask if they could swap with other TA&rsquo;s if they desire their spot.
+The goal is to develop a web application that can organize TA&rsquo;s depending on their qualifications and automatically sort out any holes left if a TA makes a change or is terminated. As a stretch goal, we also want a system that allows TA&rsquo;s to non-confrontationally ask if they could swap with other TA&rsquo;s if they desire their spot.
 </p>
+
+
+
+<div id="orgd87c592" class="figure">
+<p><img src="./flowchart.png" alt="flowchart.png" />
+</p>
+</div>
 
 <p>
 Dr. Fofanov has a personal stake in this project, in that he wishes to quell the tedium of this task through a web application developed by us! If we can develop a great web application to handle this issue, we will try to expand our horizons to the rest of the department, or maybe even to other departments and universities. The impact of such could be huge.
@@ -372,109 +391,247 @@ Dr. Fofanov has a personal stake in this project, in that he wishes to quell the
 
 <p>
 The original document of what Fofanov had in mind can be found here:
+</p>
+
+<p>
 <a href="./Fofanov-TAscheduler.pdf">./Fofanov-TAscheduler.pdf</a>
+</p>
+
+<p>
+Here is our promotional intro video for the product!
+</p>
+
+<p>
+<a href="./intro_video.mp4">./intro_video.mp4</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge7fa939" class="outline-2">
-<h2 id="orge7fa939">Development Requirements/Process</h2>
-<div class="outline-text-2" id="text-orge7fa939">
+<div id="outline-container-org6759a3d" class="outline-2">
+<h2 id="org6759a3d">Development Requirements/Process</h2>
+<div class="outline-text-2" id="text-org6759a3d">
 </div>
-<div id="outline-container-org8528376" class="outline-3">
-<h3 id="org8528376">Requirements Overview</h3>
-<div class="outline-text-3" id="text-org8528376">
+<div id="outline-container-org62f2fbd" class="outline-3">
+<h3 id="org62f2fbd">Requirements Overview</h3>
+<div class="outline-text-3" id="text-org62f2fbd">
 <p>
-To tackle this, we will need the following:
+We have developed a series of requirements to solve this problem and design a high quality web application:
 </p>
 <ul class="org-ul">
-<li>A google form used by the software to determine the qualifications for each TA.</li>
-<li>A database responsive to suit the needs of several hundred people at once.</li>
-<li>A user-friendly and inoffensive GUI easily navigable by TA&rsquo;s and GTA&rsquo;s</li>
-<li>An efficient and readable optimization algorithm to automatically sort TA&rsquo;s</li>
+<li>A stable web hosting service with sizable RAM for our database needs.</li>
+<li>Redis databases that will keep track of all assigned alumni (including their info) for each semester.</li>
+<li>A django environment encapsulating all of the database information and rendering it to the end-user in the form of templated html pages.</li>
+<li>An efficient optimization algorithm that automatically organizes TA assignment depending on which moving decisions are made.</li>
+<li>A way to send our own links of admission so that the TA&rsquo;s can create their own account on the system.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgca01f18" class="outline-3">
-<h3 id="orgca01f18">Requirements Details</h3>
-<div class="outline-text-3" id="text-orgca01f18">
+<div id="outline-container-org2628852" class="outline-3">
+<h3 id="org2628852">Data Management System</h3>
+<div class="outline-text-3" id="text-org2628852">
 <p>
-&lt;coming soon!&gt;
+The application will be using a database package that will store three primary sets of data. The first will be referred to as the “semester pool”, the second as the “TA pool”, and the third as the “lab organizer pool”. Each lab organizer will be allocated a semester pool for each semester they are responsible for managing. All pools will be accessible by the GUI in order to provide a visual representation of the data for the lab organizers and TA’s. To better visualize the data management system, the team has provided Figure 2 below.
+</p>
+
+
+<div id="orge319c0f" class="figure">
+<p><img src="./database.png" alt="database.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbf3700f" class="outline-3">
+<h3 id="orgbf3700f">Web GUI</h3>
+<div class="outline-text-3" id="text-orgbf3700f">
+<p>
+The application will feature a GUI that will allow users to visualize TA scheduling as well as employ a set of buttons that provide a series of different functions. Both user account-types will be presented with a different version of the GUI upon login. Each user will be shown pages based on the work they are trying to accomplish. Below is a rouch sketch of what the GUI should look like.
+</p>
+</div>
+<div id="outline-container-orgd342615" class="outline-4">
+<h4 id="orgd342615">Diagram of the Lab Coordinator Interface</h4>
+<div class="outline-text-4" id="text-orgd342615">
+
+<div id="orge00ee47" class="figure">
+<p><img src="./gui_diagram_1.png" alt="gui_diagram_1.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3580bd5" class="outline-4">
+<h4 id="org3580bd5">Diagram of the TA Interface</h4>
+<div class="outline-text-4" id="text-org3580bd5">
+
+<div id="orgc9e2d72" class="figure">
+<p><img src="./gui_diagram_2.png" alt="gui_diagram_2.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1484d72" class="outline-3">
+<h3 id="org1484d72">User-Based Authentication and Permissions</h3>
+<div class="outline-text-3" id="text-org1484d72">
+<p>
+Users of the application will first be authenticated by the system and subsequently given different permissions based on their account status. The importance of strict roles and permissions are to ensure security, confidentiality, and to ensure the equal satisfaction of all TA’s that are scheduled. The application will complete most of the scheduling work for the lab organizer while also allowing the organizer to make any changes necessary to fit the current context. The TA’s will not have any direct permissions in terms of schedule changes, but will be allowed to see the entire schedule.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgae6f685" class="outline-3">
-<h3 id="orgae6f685">Development Process Overview</h3>
-<div class="outline-text-3" id="text-orgae6f685">
+<div id="outline-container-org9af327f" class="outline-3">
+<h3 id="org9af327f">Optimization Algorithm</h3>
+<div class="outline-text-3" id="text-org9af327f">
+<p>
+The application will provide a way of organizing and placing TA&rsquo;s into their qualified positions. In the backend of the system will be an optimization algorithm that will contextually decide which TA gets assigned to which lab. This algorithm will contain a generalized formula for scheduling TA’s using a number-based scoring system. All TA’s hired for a specific semester will be evaluated through each semester and assigned a score based on their skill qualification. The TA with the highest score for a certain lab will be assigned to that lab.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4461bf" class="outline-3">
+<h3 id="orgb4461bf">Account Configuration and Setup</h3>
+<div class="outline-text-3" id="text-orgb4461bf">
+<p>
+There will be two primary aspects of account configuration and setup. First, the lab organizer will be able to create an account for themselves to be able to moderate their labs. Second, each TA will be able to access the application in order to provide their personal data, allowing them to be scheduled within the system.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc15e690" class="outline-3">
+<h3 id="orgc15e690">Development Process Overview</h3>
+<div class="outline-text-3" id="text-orgc15e690">
 <p>
 The team standards for our development process can be found here:
-<a href="./CS476-MagistersTeamStandards.pdf">./CS476-MagistersTeamStandards.pdf</a>
-&lt;more coming soon!&gt;
 </p>
-</div>
-</div>
 
-<div id="outline-container-org174d089" class="outline-3">
-<h3 id="org174d089">Development Process Details</h3>
-<div class="outline-text-3" id="text-org174d089">
 <p>
-&lt;coming soon!&gt;
+<a href="./CS476-MagistersTeamStandards.pdf">./CS476-MagistersTeamStandards.pdf</a>
+</p>
+
+<p>
+As of now, the team has completed its tech feasibility documents and requirements documents. They can be viewed with the followig links:
+</p>
+
+<p>
+<a href="./CS476-MagistersTechFeasibilityFinal.pdf">./CS476-MagistersTechFeasibilityFinal.pdf</a>
+</p>
+
+<p>
+<a href="./CS476-RequirementsSpecificationFinal.pdf">./CS476-RequirementsSpecificationFinal.pdf</a>
+</p>
+
+<p>
+As of most recent, we have completed out design review presentation. The slides for which can be viewed here:
+</p>
+
+<p>
+<a href="./DR1.pdf">./DR1.pdf</a>
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4dfdf87" class="outline-2">
-<h2 id="org4dfdf87">Envisioned Solution</h2>
-<div class="outline-text-2" id="text-org4dfdf87">
+<div id="outline-container-orgb3a5d80" class="outline-2">
+<h2 id="orgb3a5d80">Technologies</h2>
+<div class="outline-text-2" id="text-orgb3a5d80">
+</div>
+<div id="outline-container-orgbee989d" class="outline-3">
+<h3 id="orgbee989d">Django</h3>
+<div class="outline-text-3" id="text-orgbee989d">
+<p>
+Django is a highly scalable web framework that will allow us to make great looking and dynamic web pages that allow the user to quickly navagate and use the appropriate tools for the website. The main focus of using this framework is to develop a template of html pages and use the built-in sys admin component for the use of Fofanov.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org70be3ca" class="outline-3">
+<h3 id="org70be3ca">Redis</h3>
+<div class="outline-text-3" id="text-org70be3ca">
+<p>
+Redis is a key-value database (rather than a relational one) that resides within the computer&rsquo;s memory rather than in-disk. This will allow for lightnight fast response times to accomodate for some sluggishness on Django&rsquo;s side.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcadc876" class="outline-3">
+<h3 id="orgcadc876">Django-redis library</h3>
+<div class="outline-text-3" id="text-orgcadc876">
+<p>
+This package allows for the backend part of the django framework to hook up with the redis database. This is one of the other reasons why we chose Django was because of its nice integration into several different types of databases.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fec492" class="outline-3">
+<h3 id="org5fec492">General text editors</h3>
+<div class="outline-text-3" id="text-org5fec492">
+<p>
+For the most part, we do not plan to use many IDE&rsquo;s for the design of this project. Editors like vim, emacs, etc. will be own main tools for development.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org934200f" class="outline-3">
+<h3 id="org934200f">Pycharm community edition</h3>
+<div class="outline-text-3" id="text-org934200f">
+<p>
+In order to easily work with our django environment, we will use a django component in the IDE pycharm to start most of our development processes. Django development is already extremely speedy, but pycharm will take it a step further.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org88522bb" class="outline-3">
+<h3 id="org88522bb">AWS</h3>
+<div class="outline-text-3" id="text-org88522bb">
+<p>
+We will be using this web hosting service for our entire application. The servers will be trustworthy and efficient, and the budget will be very low considering the smaller scale of this project.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1b7a108" class="outline-3">
+<h3 id="org1b7a108">Github</h3>
+<div class="outline-text-3" id="text-org1b7a108">
+<p>
+Our code repository of choice will be github. Since many of the team members have plenty of experience with it, we will use it for our version control for the project.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org87e108a" class="outline-2">
+<h2 id="org87e108a">Envisioned Solution</h2>
+<div class="outline-text-2" id="text-org87e108a">
 <p>
 <img src="./sol_flowchart.png" alt="sol_flowchart.png" />
 This application will allow a sys admin to place the TA&rsquo;s in a table initially, but the initial placement can be done depending on how they recorded their proficiencies on the google form. Faculty will have read only privileges and will be able to make requests for changes in the database. This must be modifiable enough so that restraints when making changes to the database can be modified. If there is a schedule conflict for one of the TA&rsquo;s there will be a large pentalty from being assigned to said course, as the optimiser will be less likely to assign the student.
 </p>
 
 <p>
-Our presentation with the proposed solution can be found here:
-<a href="./CS476-MagistersMiniIntro.pdf">./CS476-MagistersMiniIntro.pdf</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgd0de097" class="outline-2">
-<h2 id="orgd0de097">Technologies</h2>
-<div class="outline-text-2" id="text-orgd0de097">
-</div>
-<div id="outline-container-orgf0658b2" class="outline-3">
-<h3 id="orgf0658b2">Possible Web Frameworks</h3>
-<div class="outline-text-3" id="text-orgf0658b2">
-<ul class="org-ul">
-<li>Django</li>
-<li>Node.js</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7814b6c" class="outline-3">
-<h3 id="org7814b6c">Possible Database Frameworks</h3>
-<div class="outline-text-3" id="text-org7814b6c">
-<ul class="org-ul">
-<li>MySQL</li>
-<li>SQLite</li>
-<li><p>
-Redis
+The lab organizer will be given a completely different view than a TA or GTA accessing the website. The lab organizer will be able to make schedule changes, see possible schedules, and view the history of changes made by them. The envisioned solution we have is all parts in terms of TA and evaluation will be automated, while the lab organizer can make as many ammendments as they want. The process for changing any fields, weights or constraints should be simple and easy.
 </p>
 
 <p>
-&lt;more coming soon&gt;
-</p></li>
-</ul>
+The TA and GTA will only be allowed to see the schedule and where they are assigned. As a stretch goal, they will be allowed to request a sawp with another TA with the lab organizer&rsquo;s approval.
+</p>
+
+<p>
+Our presentation with the proposed solution can be found here:
+<a href="./CS476-MagistersMiniIntro.pdf">./CS476-MagistersMiniIntro.pdf</a>
+</p>
+
+<p>
+The current design for our web application (everything included):
+<img src="./web_app_design.png" alt="web_app_design.png" />
+</p>
 </div>
 </div>
-</div>
-<div id="outline-container-orgaa12f80" class="outline-2">
-<h2 id="orgaa12f80">Our Schedule and Resources</h2>
-<div class="outline-text-2" id="text-orgaa12f80">
+
+
+<div id="outline-container-org7c4e333" class="outline-2">
+<h2 id="org7c4e333">Our Schedule and Resources</h2>
+<div class="outline-text-2" id="text-org7c4e333">
 <p>
 We are extremely early in the development process, so currently we are researching our options to build this application the best way possible. We will soon upload our technological feasibility document to show the current process.
 </p>
@@ -583,7 +740,7 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Begin individual research on feasible technologies</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -594,9 +751,9 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Inegrate research to our Tech feasibility document</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Meet with Dr. Fofanov to discuss tech</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -605,7 +762,18 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Begin prototyping our solution with django environment and redis database</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Complete Tech feasibility document</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Integrate planning for implementing our application in reqirements doc</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -650,7 +818,7 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Present Design Review Number 1</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
@@ -660,7 +828,7 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Finish sketch for web GUI</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -671,9 +839,9 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">Finish Redis Database and Django integration</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Sign requirements contract with Dr. Fofanov</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -682,7 +850,7 @@ We are extremely early in the development process, so currently we are researchi
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Finish optimization algorithm prototype</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -691,18 +859,19 @@ We are extremely early in the development process, so currently we are researchi
 </table>
 </div>
 </div>
-<div id="outline-container-org9cfeb2f" class="outline-2">
-<h2 id="org9cfeb2f">Codebase</h2>
-<div class="outline-text-2" id="text-org9cfeb2f">
+<div id="outline-container-org4ba6d26" class="outline-2">
+<h2 id="org4ba6d26">Codebase</h2>
+<div class="outline-text-2" id="text-org4ba6d26">
 <p>
-Coming soon!
+Here is the current github repo for our Django environment. As we continue to flesh out our prototypes, more code will be available in source.
+<a href="https://github.com/joedomabylv/taschman">https://github.com/joedomabylv/taschman</a>
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Andrew Liddell</p>
-<p class="date">Created: 2021-10-07 Thu 11:18</p>
+<p class="date">Created: 2021-12-03 Fri 06:04</p>
 </div>
 </body>
 </html>
